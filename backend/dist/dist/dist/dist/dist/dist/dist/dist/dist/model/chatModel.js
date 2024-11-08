@@ -1,3 +1,5 @@
+"use strict";
+
 const mongoose = require("mongoose");
 const chatMessageSchema = new mongoose.Schema({
   sender: {
