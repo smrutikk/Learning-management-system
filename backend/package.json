@@ -9,14 +9,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/server.js",
     "dev": "nodemon server.js",
-    "build": "babel . --out-dir dist --ignore node_modules"
+    "build": "npx babel . --out-dir dist --ignore node_modules"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/cli": "^7.25.9",
-    "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.1",
@@ -33,5 +31,9 @@
     "socket.io": "^4.7.1",
     "validator": "^13.7.0"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0"
+  }
 }
