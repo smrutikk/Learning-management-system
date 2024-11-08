@@ -2,11 +2,14 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {
+  "node": ">=14.0.0"
+},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/server.js",
     "dev": "nodemon server.js",
-    "build": "npx babel . -d dist --ignore node_modules"
+    "build": "NODE_ENV=production npx babel . -d dist --ignore node_modules"
   },
   "keywords": [],
   "author": "",
