@@ -36,7 +36,7 @@ const CourseTiles = (props) => {
     });
     const csDelete = async () => {
       const response = await fetch(
-        "http://localhost:4000/api/chapters/" + props.chapter._id,
+        "https://learning-management-system-bsqu.onrender.com/api/chapters/" + props.chapter._id,
         {
           method: "DELETE",
           headers: {

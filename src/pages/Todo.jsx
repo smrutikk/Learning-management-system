@@ -15,7 +15,7 @@ function Todo() {
 
   useEffect(() => {
     async function fetchTodos() {
-      const response = await axios.get("http://localhost:4000/", {
+      const response = await axios.get("https://learning-management-system-bsqu.onrender.com/", {
         params: { user_id: user._id },
       });
       setTodos(response.data);
@@ -31,7 +31,7 @@ function Todo() {
   const handleNewTodoSubmit = async (event) => {
     event.preventDefault();
 
-    const response = await axios.post("http://localhost:4000/", {
+    const response = await axios.post("https://learning-management-system-bsqu.onrender.com/", {
       text: newTodo,
       user_id: user._id,
     });
@@ -40,7 +40,7 @@ function Todo() {
   };
 
   const handleTodoDelete = async (id) => {
-    await axios.delete(`http://localhost:4000/${id}`);
+    await axios.delete(`https://learning-management-system-bsqu.onrender.com/${id}`);
     setTodos(todos.filter((todo) => todo._id !== id));
   };
 

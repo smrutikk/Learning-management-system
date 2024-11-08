@@ -51,7 +51,7 @@ const OpenCourse = () => {
     formData.append("doc", files);
     formData.append("_id", _id);
 
-    const response = await fetch("http://localhost:4000/api/module/", {
+    const response = await fetch("https://learning-management-system-bsqu.onrender.com/api/module/", {
       method: "POST",
       body: formData,
       headers: {
@@ -95,7 +95,7 @@ const OpenCourse = () => {
       return;
     }
 
-    const response = await fetch("http://localhost:4000/api/module/addLink", {
+    const response = await fetch("https://learning-management-system-bsqu.onrender.com/api/module/addLink", {
       method: "POST",
       body: JSON.stringify({ head, linktxt, _id }),
       headers: {

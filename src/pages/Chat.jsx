@@ -4,7 +4,7 @@ import { io } from "socket.io-client";
 import { nanoid } from "nanoid";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { json } from "react-router-dom";
-const socket = io.connect("http://localhost:4000");
+const socket = io.connect("https://learning-management-system-bsqu.onrender.com");
 
 function Chat() {
   const [prevMessage, setPrevMessage] = useState([]);
@@ -37,7 +37,7 @@ function Chat() {
     }
   });
   const fetchAllMessages = async () => {
-    const response = await fetch("http://localhost:4000/api/user/messages", {
+    const response = await fetch("https://learning-management-system-bsqu.onrender.com/api/user/messages", {
       method: "GET",
     });
     console.log(response);

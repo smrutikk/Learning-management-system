@@ -22,7 +22,7 @@ const Dashboard = () => {
 
     if (user.role === "Admin") {
       const fetchChapters = async () => {
-        const response = await fetch("http://localhost:4000/api/chapters/", {
+        const response = await fetch("https://learning-management-system-bsqu.onrender.com/api/chapters/", {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },
@@ -39,7 +39,7 @@ const Dashboard = () => {
       }
     } else {
       const fetchChapters = async () => {
-        const response = await fetch("http://localhost:4000/api/chapters/st", {
+        const response = await fetch("https://learning-management-system-bsqu.onrender.com/api/chapters/st", {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },

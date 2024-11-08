@@ -123,7 +123,7 @@ const TableColumns = () => {
   };
   const getAllUsers = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/user/all-users", {
+      const response = await fetch("https://learning-management-system-bsqu.onrender.com/api/user/all-users", {
         method: "GET",
       });
       const result = await response.json();

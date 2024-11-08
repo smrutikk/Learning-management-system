@@ -23,7 +23,7 @@ const Courses = () => {
   useEffect(() => {
     setLoading(true);
     const fetchChapters = async () => {
-      const response = await fetch("http://localhost:4000/api/chapters/", {
+      const response = await fetch("https://learning-management-system-bsqu.onrender.com/api/chapters/", {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
@@ -53,7 +53,7 @@ const Courses = () => {
     formData.append("title", title);
     formData.append("img", file);
 
-    const response = await fetch("http://localhost:4000/api/chapters/", {
+    const response = await fetch("https://learning-management-system-bsqu.onrender.com/api/chapters/", {
       method: "POST",
       body: formData,
       headers: {

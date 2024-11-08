@@ -33,7 +33,7 @@ const Profile = () => {
     formData.append("avatar", file);
     formData.append("_id", user._id);
 
-    const response = await fetch("http://localhost:4000/api/user/Profile/", {
+    const response = await fetch("https://learning-management-system-bsqu.onrender.com/api/user/Profile/", {
       method: "POST",
       body: formData,
     });
