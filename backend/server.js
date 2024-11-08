@@ -1,5 +1,10 @@
 require('dotenv').config();
 
+// Debugging: Log environment variables to verify they are loaded
+console.log("MONGO_URI:", process.env.MONGO_URI);
+console.log("PORT:", process.env.PORT);
+
+
 const express = require("express");
 const mongoose = require("mongoose");
 const chaptersRoutes = require("./routes/chapters");
