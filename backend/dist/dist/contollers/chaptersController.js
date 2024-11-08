@@ -1,5 +1,3 @@
-"use strict";
-
 const Chapters = require("../model/chaptersModel");
 const mongoose = require("mongoose");
 const cloudinary = require("../helper/cloudinary");

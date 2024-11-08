@@ -1,5 +1,3 @@
-"use strict";
-
 const UserModel = require("../model/userModel");
 const jwt = require("jsonwebtoken");
 const cloudinary = require("../helper/cloudinary");
