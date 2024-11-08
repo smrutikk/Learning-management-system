@@ -9,6 +9,8 @@ const path = require("path");
 const routes = require("./routes/ToDoRoute");
 const { socketController } = require("./contollers/chatController");
 
+mongoose.set('strictQuery', true);
+
 //express app created
 const app = express();
 const server = require("http").createServer(app);
