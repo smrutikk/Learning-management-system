@@ -1,3 +1,5 @@
+"use strict";
+
 const jwt = require("jsonwebtoken");
 const User = require("../model/userModel");
 const requireAuth = async (req, res, next) => {

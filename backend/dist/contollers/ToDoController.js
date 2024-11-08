@@ -1,3 +1,5 @@
+"use strict";
+
 const ToDoModel = require("../model/ToDoModel");
 module.exports.getToDo = async (req, res) => {
   const {

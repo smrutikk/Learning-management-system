@@ -1,5 +1,3 @@
-"use strict";
-
 const express = require("express");
 const {
   createChapters,
@@ -8,13 +6,12 @@ const {
   getchapter,
   deleteChapter,
   updateChapter,
-  createModule
+  createModule,
 } = require("../contollers/chaptersController");
+
 const requireAuth = require("../middleware/requireAuth");
 const router = express.Router();
-const {
-  upload
-} = require("../helper/filehelper");
+const { upload } = require("../helper/filehelper");
 
 //require auth for all workout routes
 router.use(requireAuth);
@@ -36,4 +33,5 @@ router.delete("/:id", deleteChapter);
 
 //Update a chapter
 router.patch("/:id", updateChapter);
+
 module.exports = router;
